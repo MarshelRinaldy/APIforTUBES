@@ -126,4 +126,29 @@ class UserController extends Controller
                 ],400);
         }
     }
+
+    public function login(Request $request)
+    {
+        try {
+            $credentials = $request->only('username', 'password');
+
+            if (auth()->attempt($credentials)) {
+                $user = auth()->user();
+                return response()->json([
+                    'status' => true,
+                    'message' => 'Login success',
+                    'data' => $user,
+                ], 200);
+            } else {
+                throw new \Exception('Invalid username or password');
+            }
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => $e->getMessage(),
+                'data' => [],
+            ], 400);
+        }
+    }
 }
+
