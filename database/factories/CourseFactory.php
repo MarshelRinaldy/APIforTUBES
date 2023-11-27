@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Barang>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Course>
  */
-class BarangFactory extends Factory
+class CourseFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,10 +16,10 @@ class BarangFactory extends Factory
      */
     public function definition(): array
     {
+        $imagePath = $this->faker->image('public/storage/images', 400, 300, null, false);
         return [
-            'nama' => '',
-            'deskripsi' => fake()->words(fake()->numberBetween(3,6),true),
-            'stok' => fake()->numberBetween(5,10),
+            'nama_kursus' => '',
+            'jam' => ''
         ];
     }
 }

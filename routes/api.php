@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -17,4 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::apiResource('user', UserController::class);
-Route::post('user/login', [UserController::class, 'login']);
+
+Route::apiResource('course', CourseController::class);
+Route::post('login', [LoginController::class, 'login']);
+
