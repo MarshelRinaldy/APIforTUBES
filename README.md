@@ -8,8 +8,6 @@
 5. Rachellia Ayu Herdani (210711019)
 
 ## Deskripsi pembagian
-1. Login : Marshel Rinaldy
-2. CRUD: Rachellia Ayu Herdani
-3. Tampil Profil : Bryan Matthew Alexander
-4. Fitur forgot password & update profile : William Darmawan
-5. Register : Aldo Putra Wohangara
+1. widget testing pada halaman login (Marshel Rinaldy, William Darmawan)
+2. Melakukan widget testing pada halaman register (Bryan Matthew, Rachellia Ayu Herdani)
+3. Melakukan widget testing salah satu CRUD (Aldo Putra Wohangara)
